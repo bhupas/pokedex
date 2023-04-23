@@ -1,8 +1,8 @@
-{
+{  
+  "homepage": "https://bhupas.github.io/pokedex",
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bhupas.github.io/pokedex",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,13 +16,12 @@
     "web-vitals": "^3.1.0"
   },
   "scripts": {
+    "start": "BROWSER=none WDS_SOCKET_PORT=0 react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b main -d build",
-    "start": "BROWSER=none WDS_SOCKET_PORT=0 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": [
